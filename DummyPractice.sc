@@ -16,7 +16,7 @@ object DummyPractice {
                                                   //| u
                                                   //| a
   
- "Johan".drop(2).take(2).capitalize               //> res1: String = Ha
+ "Johan".drop(2).take(2)                          //> res1: String = ha
  
  case class Student(name: String, score: Int)
  val hannah = Student("Hannah", 95)               //> hannah  : DummyPractice.Student = Student(Hannah,95)
