@@ -31,5 +31,14 @@ object DummyPractice {
  val match1 = numPattern.findFirstIn(address)     //> match1  : Option[String] = Some(123)
  val matches = numPattern.findAllIn(address).toArray
                                                   //> matches  : Array[String] = Array(123, 101)
+                                                  
+  "simon"(1)                                      //> res2: Char = i
+  
+  
+   implicit class StringImprovements(a: String)
+    {
+        def increment = a.map(c => (c + 1).toChar)
+      }
+  val a = "Jos".increment                         //> a  : String = Kpt
  
 }
